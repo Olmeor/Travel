@@ -473,9 +473,11 @@ footer {
   align-items: center;
   padding: 0 120px;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 24px;
-  /*height: 90px;*/
+  height: 90px;
+  /*padding-top: 25px;
+  padding-bottom: 24px;*/
+  position: relative;
+  z-index: 999
 }
 
 .header__logo {
@@ -559,8 +561,13 @@ footer {
 /* Preview styles start */
 
 .preview {
-  min-height: 100vh; /* минимальная высота блока */
+  height: 100vh; /* минимальная высота блока */
   background: url(../img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg) no-repeat center; /* без повторений по центру*/
   background-size: cover; /* полностью покрывать при любом масштабе */
-  padding-top: -90px;
+  margin-top: -90px;
+  padding-top: 90px;
+}
+
+.preview__title {
+  margin: 0;
 }
