@@ -449,6 +449,11 @@ body {
   color: #0D606F;
 }
 
+img {
+  max-width: 100%; /* чтоб изображение не превышало размер контейнера в котором находится */
+  height: auto; /* чтоб сжималось пропорционально */
+}
+
 /* ширина основных блоков */
 header,
 main,
@@ -457,16 +462,20 @@ footer {
   margin: 0 auto;
 }
 
-header {
-  background: #F2785C;
-  opacity: 0.7;
+/* Header styles start */
+
+.header__wrapper {
+  background: rgba(242, 120, 92, 0.7);
+  /* opacity: 0.2; */
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 0 120px;
   justify-content: space-between;
-  height: 90px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  /*height: 90px;*/
 }
 
 .header__logo {
@@ -491,6 +500,7 @@ header {
   flex-wrap: wrap;
   list-style: none; /* убрать маркеры */
   padding-left: 0; /* и сдвинуть влево */
+  margin: 0 auto;
 }
 
 .header__item {
@@ -510,6 +520,12 @@ header {
   color: #FFFFFF;
   text-decoration: none;
   list-style: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  opacity: 0.8; /* добавление прозрачности */
 }
 
 .header__login-form_button {
@@ -536,4 +552,15 @@ header {
 .header__login-form_button:focus,
 .header__login-form_button:active {
   opacity: 0.8;
+}
+
+/* Header styles end */
+
+/* Preview styles start */
+
+.preview {
+  min-height: 100vh; /* минимальная высота блока */
+  background: url(../img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg) no-repeat center; /* без повторений по центру*/
+  background-size: cover; /* полностью покрывать при любом масштабе */
+  padding-top: -90px;
 }
