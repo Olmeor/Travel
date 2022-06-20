@@ -650,7 +650,7 @@ footer {
 
 /* Steps styles start */
 
-.steps_title {
+.steps__title {
   /* left: calc(50% - 611px/2);
   top: calc(50% - 53px/2 - 97px);*/
   margin: 0;
@@ -661,4 +661,123 @@ footer {
   color: #F2785C;
   text-align: center;
   padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.steps__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 131px;
+  padding-bottom: 97px;
+}
+
+.steps__cards-bike {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.steps__cards-calendar {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.steps__cards-plane {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.steps__card {
+  text-align: center;
+  
+}
+
+.steps__card-thumb {
+  padding-bottom: 30px;
+}
+
+.steps__card-desc {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0D606F;
+}
+
+.steps__card-thumb:hover,
+.steps__card-thumb:focus,
+.steps__card-thumb:active {
+  opacity: 0.8;
+}
+
+/* Steps styles end */
+
+/* Destination styles start */
+
+.destination__title {
+  margin: 0;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: #F2785C;
+  text-align: center;
+  padding-bottom: 46px;
+}
+
+.destination__slider {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+}
+
+.destination__slider-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.destination__slider-img {
+  width: 30%;
+}
+
+.destination__slider-desc {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #000000;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+
+.destination__plug {
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.destination__form {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.destination__find_button {
+  /* рамка */
+  width: 103px;
+  height: 41px;
+  background: #0D606F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: 0;
+  /* текст */
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
 }
