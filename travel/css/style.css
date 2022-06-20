@@ -785,6 +785,7 @@ footer {
   background-size: cover; /* полностью покрывать при любом масштабе */
   margin-top: -40px;
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .stories__wrapper-bg {
@@ -873,8 +874,12 @@ footer {
 
 /* Footer styles start */
 
+.footer {
+  margin-top: -45px;
+
+}
+
 .footer__wrapper {
-  background: blue;
   margin: 0 120px;
   display: flex;
   flex-wrap: wrap;
@@ -896,6 +901,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
+  margin-bottom: 5px;
 }
 
 .footer__school,
@@ -911,3 +917,5 @@ footer {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+/* Footer styles end */
