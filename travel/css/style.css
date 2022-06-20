@@ -816,7 +816,7 @@ footer {
 .stories__card {
   display: flex;
   /* flex-wrap: wrap; отключить, иначе текстовый блок не заходит */
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .stories__card-pic {
@@ -867,4 +867,47 @@ footer {
   display: block;
   margin: auto;
   padding-bottom: 40px;
+}
+
+/* Stories styles end */
+
+/* Footer styles start */
+
+.footer__wrapper {
+  background: blue;
+  margin: 0 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__rsschool-logo,
+.footer__github-logo,
+.footer__instagram-logo,
+.footer__instagram-logo,
+.footer__instagram-logo {
+  height: 33px;
+}
+
+.footer__copyright {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.footer__school,
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__rsschool,
+.footer__instagram,
+.footer_youtube {
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
