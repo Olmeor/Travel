@@ -431,6 +431,7 @@ template {
 /* установка границ внутри контейнера */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* наследование границ*/
@@ -491,7 +492,6 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  /* line-height: 39px;*/
   color: #FFFFFF;
   margin-left: 6px;
   margin: 0 auto;
@@ -767,18 +767,35 @@ footer {
   padding-bottom: 40px;
 }
 
-.destination__find-more-button:hover,
-.destination__find-more-button:focus,
-.destination__find-more-button:active {
-  opacity: 0.8;
-}
-
-.destination__find-more-ico {
-  display: block;
-  margin: auto;
+.destination__find-button-wrapper{
   padding-bottom: 80px;
 }
+.destination__find-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  width: 228px;
+  height: 59px;
+  margin: 0 auto;
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: 0;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
 
+.destination__find-button:hover,
+.destination__find-button:focus,
+.destination__find-button:active {
+  opacity: 0.8;
+}
 /* Destination styles end */
 
 /* Stories styles start */
@@ -834,10 +851,6 @@ footer {
   border-radius: 16px;
 }
 
-.stories__card-pic img{
-  /*margin: -4px -4px -4px -4px;*/
-}
-
 .stories__card-title {
   font-family: 'Aleo';
   font-style: normal;
@@ -862,6 +875,7 @@ footer {
   font-size: 20px;
   color: #0D606F;
   margin: 0 0 0 40px;
+  transition-duration: 0.4s;
 }
 
 .stories__card-more:hover,
@@ -870,16 +884,34 @@ footer {
   opacity: 0.8;
 }
 
-.stories__see-more-button:hover,
-.stories__see-more-button:focus,
-.stories__see-more-button:active {
-  opacity: 0.8;
+.stories__see-button-wrapper{
+  padding: 20px 0 40px;
+}
+.stories__see-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  width: 228px;
+  height: 59px;
+  margin: 0 auto;
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: 0;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
-.stories__see-more-ico {
-  display: block;
-  margin: auto;
-  padding-bottom: 40px;
+.stories__see-button:hover,
+.stories__see-button:focus,
+.stories__see-button:active {
+  opacity: 0.8;
 }
 
 /* Stories styles end */
@@ -916,18 +948,26 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer__school,
-.footer__social {
+.footer__school {
   display: flex;
   flex-wrap: wrap;
 }
 
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
 .footer__rsschool,
-.footer__instagram,
-.footer_youtube {
+.footer__social-item {
   margin-right: 20px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0; /* обнуление последнего отступа */
 }
 
 /* Footer styles end */
