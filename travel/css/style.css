@@ -177,7 +177,6 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 21px;*/
   color: #ffffff;
   text-decoration: none;
   list-style: none;
@@ -315,8 +314,6 @@ footer {
 /* Steps styles start */
 
 .steps__title {
-  /* left: calc(50% - 611px/2);
-  top: calc(50% - 53px/2 - 97px);*/
   margin: 0;
   font-family: "Red Hat Text";
   font-style: normal;
@@ -400,7 +397,6 @@ footer {
   justify-content: center;
   gap: 60px;
   overflow: hidden;
-  /* padding-bottom: 24px; */
 }
 
 .destination__slider-item {
