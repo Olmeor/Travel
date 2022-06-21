@@ -485,6 +485,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 5px;
 }
 
 .header__logo-name {
@@ -495,6 +496,10 @@ footer {
   color: #FFFFFF;
   margin-left: 6px;
   margin: 0 auto;
+}
+
+.header__nav {
+  margin-left: -27px;
 }
 
 .header__list {
@@ -557,7 +562,6 @@ footer {
 /* Preview styles start */
 
 .preview {
-  /*height: 100vh;*/ /* минимальная высота блока */
   height: 100%;
   background: url(../img/first_background.jpg) no-repeat center; /* без повторений по центру*/
   background-size: cover; /* полностью покрывать при любом масштабе */
@@ -569,7 +573,7 @@ footer {
   padding-left: 120px;
   padding-right: 428px;
   padding-top: 32px;
-  padding-bottom: 221px;
+  padding-bottom: 233px;
 }
 
 .preview__title {
@@ -587,6 +591,8 @@ footer {
   font-weight: 700;
   font-size: 20px;
   color: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 27px;
 }
 
 .preview-form__wrap {
@@ -604,7 +610,7 @@ footer {
 
 .preview-form__field {
   padding: 0;
-  margin-left: 41px;
+  margin-left: 40px;
   width: 350px;
   border: 0;
   outline: none;
@@ -661,7 +667,7 @@ footer {
   font-size: 40px;
   color: #F2785C;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 83px;
   padding-bottom: 40px;
 }
 
@@ -669,6 +675,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin: 0 131px;
+  padding-top: 5px;
   padding-bottom: 97px;
 }
 
@@ -699,7 +706,7 @@ footer {
 }
 
 .steps__card-thumb {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .steps__card-desc {
@@ -728,7 +735,7 @@ footer {
   font-size: 40px;
   color: #F2785C;
   text-align: center;
-  padding-bottom: 46px;
+  padding-bottom: 50px;
 }
 
 .destination__slider {
@@ -765,6 +772,7 @@ footer {
   display: block;
   margin: auto;
   padding-bottom: 40px;
+  margin-top: -20px;
 }
 
 .destination__find-button-wrapper{
@@ -824,7 +832,7 @@ footer {
   font-size: 40px;
   color: #F2785C;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 85px;
 }
 
 .stories__cards{
@@ -839,7 +847,7 @@ footer {
 .stories__card {
   display: flex;
   /* flex-wrap: wrap; отключить, иначе текстовый блок не заходит */
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .stories__card-pic {
@@ -885,7 +893,7 @@ footer {
 }
 
 .stories__see-button-wrapper{
-  padding: 20px 0 40px;
+  padding: 10px 0 40px;
 }
 .stories__see-button {
   display: flex;
