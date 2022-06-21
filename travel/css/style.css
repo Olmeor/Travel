@@ -733,27 +733,32 @@ footer {
 
 .destination__slider {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 24px;
+  justify-content: center;
+  gap: 60px;
+  overflow: hidden;
+  /* padding-bottom: 24px; */
 }
 
 .destination__slider-item {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  flex-shrink: 0; /* чтоб картинка не уменьшалась */
 }
 
 .destination__slider-img {
-  width: 30%;
+  border: 0;
+  border-radius: 16px;
 }
-
 .destination__slider-desc {
+  position: relative;
   font-family: 'Red Hat Text';
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  color: #000000;
-  padding-left: 15px;
-  padding-bottom: 40px;
+  color: #ffffff;
+  margin: 0;
+  top: -83px;
+  left: 15px;
+  z-index: 10;
 }
 
 .destination__plug {
@@ -822,8 +827,15 @@ footer {
 
 .stories__card-pic {
   width: 400px;
+  height: 250px;
   flex-shrink: 0; /* чтоб картинка не уменьшалась */
+  overflow: hidden;
   filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+}
+
+.stories__card-pic img{
+  /*margin: -4px -4px -4px -4px;*/
 }
 
 .stories__card-title {
