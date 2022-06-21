@@ -1,431 +1,75 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
-}
+/* add fonts */
 
 /* red-hat-text-500 - latin */
 @font-face {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  src: local(''),
-       url('../fonts/red-hat-text-v11-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/red-hat-text-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/red-hat-text-v11-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/red-hat-text-v11-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* red-hat-text-regular - latin */
 @font-face {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/red-hat-text-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/red-hat-text-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/red-hat-text-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/red-hat-text-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-italic - latin */
 @font-face {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/aleo-v11-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-regular - latin */
 @font-face {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/aleo-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-700 - latin */
 @font-face {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/aleo-v11-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-700italic - latin */
 @font-face {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/aleo-v11-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* magra-regular - latin */
 @font-face {
-  font-family: 'Magra';
+  font-family: "Magra";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/magra-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/magra-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/magra-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* magra-700 - latin */
 @font-face {
-  font-family: 'Magra';
+  font-family: "Magra";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../fonts/magra-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/magra-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/magra-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* установка границ внутри контейнера */
@@ -441,13 +85,26 @@ html {
   box-sizing: inherit;
 }
 
+/* стили курсора (из reset.css)*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
 body {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: medium;
-  color: #0D606F;
+  color: #0d606f;
 }
 
 img {
@@ -467,7 +124,6 @@ footer {
 
 .header__wrapper {
   background: rgba(242, 120, 92, 0.7);
-  /* opacity: 0.2; */
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
   display: flex;
   flex-wrap: wrap;
@@ -475,10 +131,8 @@ footer {
   padding: 0 120px;
   justify-content: space-between;
   height: 90px;
-  /*padding-top: 25px;
-  padding-bottom: 24px;*/
   position: relative;
-  z-index: 999
+  z-index: 999;
 }
 
 .header__logo {
@@ -489,11 +143,11 @@ footer {
 }
 
 .header__logo-name {
-  font-family: 'Magra';
+  font-family: "Magra";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 6px;
   margin: 0 auto;
 }
@@ -519,42 +173,44 @@ footer {
 }
 
 .header__link {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   /* line-height: 21px;*/
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   list-style: none;
+  transition-duration: 0.4s;
 }
 
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-  opacity: 0.8; /* добавление прозрачности */
+  opacity: 0.7; /* добавление прозрачности */
 }
 
 .header__login-form_button {
   /* рамка */
   width: 103px;
   height: 41px;
-  background: #0D606F;
+  background: #0d606f;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: 0;
   /* текст */
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
+  transition-duration: 0.4s;
 }
 
 .header__login-form_button:hover,
 .header__login-form_button:focus,
 .header__login-form_button:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* Header styles end */
@@ -578,19 +234,19 @@ footer {
 
 .preview__title {
   margin: 0;
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .preview__subtitle {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 30px;
   margin-bottom: 27px;
 }
@@ -615,42 +271,43 @@ footer {
   border: 0;
   outline: none;
   background: none;
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
-  color: #0D606F;
+  color: #0d606f;
 }
 
 .preview-form__field::placeholder {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
-  color: #F2785C
+  color: #f2785c;
 }
 
 .preview-form__button {
   /* рамка */
   width: 228px;
   height: 59px;
-  background: #0D606F;
+  background: #0d606f;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: 0;
   /* текст */
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 18px 18px 18px 0;
+  transition-duration: 0.4s;
 }
 
 .preview-form__button:hover,
 .preview-form__button:focus,
 .preview-form__button:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* Preview styles end */
@@ -661,11 +318,11 @@ footer {
   /* left: calc(50% - 611px/2);
   top: calc(50% - 53px/2 - 97px);*/
   margin: 0;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  color: #F2785C;
+  color: #f2785c;
   text-align: center;
   padding-top: 83px;
   padding-bottom: 40px;
@@ -702,7 +359,6 @@ footer {
 
 .steps__card {
   text-align: center;
-  
 }
 
 .steps__card-thumb {
@@ -710,17 +366,18 @@ footer {
 }
 
 .steps__card-desc {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  color: #0D606F;
+  color: #0d606f;
+  transition-duration: 0.4s;
 }
 
 .steps__card-thumb:hover,
 .steps__card-thumb:focus,
 .steps__card-thumb:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* Steps styles end */
@@ -729,11 +386,11 @@ footer {
 
 .destination__title {
   margin: 0;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  color: #F2785C;
+  color: #f2785c;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -757,7 +414,7 @@ footer {
 }
 .destination__slider-desc {
   position: relative;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -775,7 +432,7 @@ footer {
   margin-top: -20px;
 }
 
-.destination__find-button-wrapper{
+.destination__find-button-wrapper {
   padding-bottom: 80px;
 }
 .destination__find-button {
@@ -788,21 +445,22 @@ footer {
   width: 228px;
   height: 59px;
   margin: 0 auto;
-  background: #0D606F;
+  background: #0d606f;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: 0;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
+  transition-duration: 0.4s;
 }
 
 .destination__find-button:hover,
 .destination__find-button:focus,
 .destination__find-button:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 /* Destination styles end */
 
@@ -826,16 +484,16 @@ footer {
 
 .stories__title {
   margin: 0;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  color: #F2785C;
+  color: #f2785c;
   text-align: center;
   padding-bottom: 85px;
 }
 
-.stories__cards{
+.stories__cards {
   display: block;
   margin: 0 120px;
 }
@@ -855,33 +513,33 @@ footer {
   height: 250px;
   flex-shrink: 0; /* чтоб картинка не уменьшалась */
   overflow: hidden;
-  filter: drop-shadow(0px 4px 4px #0D606F);
+  filter: drop-shadow(0px 4px 4px #0d606f);
   border-radius: 16px;
 }
 
 .stories__card-title {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
-  color: #0D606F;
+  color: #0d606f;
   padding-bottom: 24px;
 }
 
 .stories__card-text {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  color: #0D606F;
+  color: #0d606f;
 }
 
 .stories__card-more {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  color: #0D606F;
+  color: #0d606f;
   margin: 0 0 0 40px;
   transition-duration: 0.4s;
 }
@@ -889,10 +547,10 @@ footer {
 .stories__card-more:hover,
 .stories__card-more:focus,
 .stories__card-more:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
-.stories__see-button-wrapper{
+.stories__see-button-wrapper {
   padding: 10px 0 40px;
 }
 .stories__see-button {
@@ -905,21 +563,22 @@ footer {
   width: 228px;
   height: 59px;
   margin: 0 auto;
-  background: #0D606F;
+  background: #0d606f;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: 0;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
+  transition-duration: 0.4s;
 }
 
 .stories__see-button:hover,
 .stories__see-button:focus,
 .stories__see-button:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* Stories styles end */
@@ -928,7 +587,6 @@ footer {
 
 .footer {
   margin-top: -45px;
-
 }
 
 .footer__wrapper {
@@ -948,11 +606,11 @@ footer {
 }
 
 .footer__copyright {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
