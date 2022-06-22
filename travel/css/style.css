@@ -72,20 +72,17 @@
     /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* установка границ внутри контейнера */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-/* наследование границ*/
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/* стили курсора (из reset.css)*/
 button,
 html input[type="button"],
 input[type="reset"],
@@ -108,11 +105,10 @@ body {
 }
 
 img {
-  max-width: 100%; /* чтоб изображение не превышало размер контейнера в котором находится */
-  height: auto; /* чтоб сжималось пропорционально */
+  max-width: 100%;
+  height: auto;
 }
 
-/* ширина основных блоков */
 header,
 main,
 footer {
@@ -159,17 +155,17 @@ footer {
 .header__list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none; /* убрать маркеры */
-  padding-left: 0; /* и сдвинуть влево */
+  list-style: none;
+  padding-left: 0;
   margin: 0 auto;
 }
 
 .header__item {
-  margin-right: 42px; /* отступы в меню */
+  margin-right: 42px;
 }
 
 .header__item:last-child {
-  margin-right: 0; /* обнуление последнего отступа */
+  margin-right: 0;
 }
 
 .header__link {
@@ -186,7 +182,7 @@ footer {
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-  opacity: 0.7; /* добавление прозрачности */
+  opacity: 0.7;
 }
 
 .header__login-form_button {
@@ -218,8 +214,8 @@ footer {
 
 .preview {
   height: 100%;
-  background: url(../img/first_background.jpg) no-repeat center; /* без повторений по центру*/
-  background-size: cover; /* полностью покрывать при любом масштабе */
+  background: url(../img/first_background.jpg) no-repeat center;
+  background-size: cover;
   margin-top: -90px;
   padding-top: 90px;
 }
@@ -401,7 +397,7 @@ footer {
 
 .destination__slider-item {
   position: relative;
-  flex-shrink: 0; /* чтоб картинка не уменьшалась */
+  flex-shrink: 0;
 }
 
 .destination__slider-img {
@@ -465,8 +461,8 @@ footer {
 .stories__wrapper {
   width: 1440px;
   height: 100%;
-  background: url(../img/second_background.jpg) no-repeat center; /* без повторений по центру*/
-  background-size: cover; /* полностью покрывать при любом масштабе */
+  background: url(../img/second_background.jpg) no-repeat center;
+  background-size: cover;
   margin-top: -40px;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -500,14 +496,13 @@ footer {
 
 .stories__card {
   display: flex;
-  /* flex-wrap: wrap; отключить, иначе текстовый блок не заходит */
   padding-bottom: 30px;
 }
 
 .stories__card-pic {
   width: 400px;
   height: 250px;
-  flex-shrink: 0; /* чтоб картинка не уменьшалась */
+  flex-shrink: 0;
   overflow: hidden;
   filter: drop-shadow(0px 4px 4px #0d606f);
   border-radius: 16px;
