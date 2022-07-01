@@ -1,75 +1,91 @@
 /* add fonts */
 
 /* red-hat-text-500 - latin */
+
 @font-face {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   src: local(""), url("../fonts/red-hat-text-v11-latin-500.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/red-hat-text-v11-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/red-hat-text-v11-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* red-hat-text-regular - latin */
+
 @font-face {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/red-hat-text-v11-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/red-hat-text-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/red-hat-text-v11-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-italic - latin */
+
 @font-face {
   font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
   src: local(""), url("../fonts/aleo-v11-latin-italic.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-regular - latin */
+
 @font-face {
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/aleo-v11-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-700 - latin */
+
 @font-face {
   font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
   src: local(""), url("../fonts/aleo-v11-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* aleo-700italic - latin */
+
 @font-face {
   font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
   src: local(""), url("../fonts/aleo-v11-latin-700italic.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/aleo-v11-latin-700italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* magra-regular - latin */
+
 @font-face {
   font-family: "Magra";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/magra-v14-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* magra-700 - latin */
+
 @font-face {
   font-family: "Magra";
   font-style: normal;
   font-weight: 700;
   src: local(""), url("../fonts/magra-v14-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/magra-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
@@ -245,10 +261,9 @@ footer {
   bottom: 45.83%;
 }
 
-  .header__nav-close {
+.header__nav-close {
   display: none;
 }
-
 
 /* Header styles end */
 
@@ -446,6 +461,7 @@ footer {
   border: 0;
   border-radius: 16px;
 }
+
 .destination__slider-desc {
   position: relative;
   font-family: "Red Hat Text";
@@ -469,6 +485,7 @@ footer {
 .destination__find-button-wrapper {
   padding-bottom: 80px;
 }
+
 .destination__find-button {
   display: flex;
   flex-direction: row;
@@ -496,12 +513,12 @@ footer {
 .destination__find-button:active {
   opacity: 0.7;
 }
+
 /* Destination styles end */
 
 /* Stories styles start */
 
 .stories__wrapper {
-  /*width: 1440px;*/
   height: 100%;
   background: url(../img/second_background.jpg) no-repeat center;
   background-size: cover;
@@ -586,6 +603,7 @@ footer {
 .stories__see-button-wrapper {
   padding: 10px 0 40px;
 }
+
 .stories__see-button {
   display: flex;
   flex-direction: row;
@@ -666,7 +684,8 @@ footer {
 }
 
 .footer__social-item:last-child {
-  margin-right: 0; /* обнуление последнего отступа */
+  margin-right: 0;
+  /* обнуление последнего отступа */
 }
 
 /* Footer styles end */
@@ -674,10 +693,11 @@ footer {
 /* Media start */
 
 @media screen and (max-width: 1281px) {
+  
   .header__wrapper {
     padding: 0 80px;
   }
-
+  
   .header__item {
     margin-right: 20px;
   }
@@ -685,19 +705,16 @@ footer {
   .header__nav {
     margin-left: 0px;
   }
-  
+
   .preview__wrapper {
     padding-left: 80px;
     padding-right: 108px;
-    /*padding-top: 32px;
-    padding-bottom: 233px;*/
   }
-  
+
   .steps__cards-wrapper {
     margin: 0 80px;
-    /*padding-bottom: 97px;*/
   }
-  
+
   .stories__cards {
     margin: 0 80px;
   }
@@ -705,25 +722,16 @@ footer {
   .stories__cards p {
     margin: 0 0 0 20px;
   }
-  
+
   .stories__card {
     padding-bottom: 30px;
   }
-  
-  .stories__card-pic {
-    width: 400px;
-    height: 250px;
-    flex-shrink: 0;
-    overflow: hidden;
-    filter: drop-shadow(0px 4px 4px #0d606f);
-    border-radius: 16px;
-  }
-  
+
   .stories__card-title {
     font-size: 30px;
     padding-bottom: 12px;
   }
-  
+
   .stories__card-text {
     font-size: 18px;
   }
@@ -739,8 +747,8 @@ footer {
 }
 
 @media screen and (max-width: 1101px) {
-
-  .stories__cards p {
+  
+    .stories__cards p {
     margin: 0 0 0 15px;
   }
 
@@ -752,33 +760,102 @@ footer {
     font-size: 16px;
     margin: 0 0 0 15px;
   }
-
 }
 
 @media screen and (max-width: 1025px) {
+  
+    .header__wrapper {
+    padding: 0 20px;
+  }
 
+  .header__logo-name {
+    font-size: 24px;
+  }
+
+  .header__item {
+    margin-right: 10px;
+  }
+
+  .header__nav {
+    margin-left: 0px;
+  }
+
+  .preview__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .steps__cards-wrapper {
+    margin: 0 20px;
+  }
+
+  .destination__slider-item {
+    flex-shrink: 0.2;
+  }
+
+  .stories__cards {
+    margin: 0 20px;
+  }
+
+  .stories__cards p {
+    margin: 0 0 0 20px;
+  }
+
+  .stories__card {
+    padding-bottom: 30px;
+  }
+
+  .stories__card-title {
+    font-size: 30px;
+    padding-bottom: 12px;
+  }
+
+  .stories__card-text {
+    font-size: 18px;
+  }
+
+  .stories__card-more {
+    font-size: 18px;
+    margin: 0 0 0 20px;
+  }
+
+  .footer__wrapper {
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+
+  .stories__card {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  
+  .stories__card-pic {
+    width: 400px;
+    height: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 4px #0d606f);
+    border-radius: 16px;
+  }
 }
 
 @media screen and (max-width: 391px) {
   .header__burger {
     display: block;
   }
-
-  .header__nav{
+  
+  .header__nav {
     position: relative;
     width: 165px;
     height: 250px;
-    background: #F2785C;
+    background: #f2785c;
     box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
     border-radius: 10px;
   }
 
   .header__list {
-    /*position: absolute;
-    width: 106px;
-    height: 176px;
-    right: 15px;
-    top: 44px;*/
     flex-direction: column;
     align-items: flex-end;
     margin: 44px 15px 0 0;
@@ -787,11 +864,11 @@ footer {
   .header__item:nth-child(5),
   .header__item:nth-child(6) {
     display: block;
-}
+  }
+
   .header__item {
     margin-right: 0;
     padding-bottom: 10px;
-    
   }
 
   .header__nav-close {
@@ -809,10 +886,8 @@ footer {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
   }
-
 }
-
 
 /* Media end */
