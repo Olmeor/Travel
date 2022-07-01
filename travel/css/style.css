@@ -306,6 +306,7 @@ footer {
 .preview-form__wrap {
   border: 0;
   padding: 0;
+  margin: 0;
 }
 
 .preview-form__info {
@@ -764,7 +765,7 @@ footer {
 
 @media screen and (max-width: 1025px) {
   
-    .header__wrapper {
+  .header__wrapper {
     padding: 0 20px;
   }
 
@@ -826,6 +827,9 @@ footer {
 
 @media screen and (max-width: 925px) {
 
+  .destination__slider {
+    gap: 50px;
+  }
   .stories__card {
     display: flex;
     padding-bottom: 30px;
@@ -844,6 +848,7 @@ footer {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
   }
 
   .stories__card-title {
@@ -853,14 +858,178 @@ footer {
 
   .stories__card-text {
     font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
   }
 }
 
-@media screen and (max-width: 847px) {
-  .stories__card-text {
+@media screen and (max-width: 769px) {
+  .header__logo-name {
+    display: none;
+  }
+
+  .header__link {
+    font-size: 14px;
+  }
+
+  .header__login-form_button {
+    /* рамка */
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .preview__wrapper{
+    padding-bottom: 61px;
+  }
+
+  .preview__title {
+    font-size: 40px;
+  }
+
+  .preview__subtitle {
     font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .preview-form__info {
+    margin: 0;
+  }
+  .preview-form__field {
+    margin-left: 16.55px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  
+  .preview-form__field::placeholder {
+    font-size: 18px;
+  }
+  
+  .preview-form__button {
+    width: 122px;
+    height: 30px;
+    font-size: 14px;
+    margin: 9px 9px 9px 0;
+  }
+
+  .steps__title {
+    padding: 30px 0;
+  }
+
+  .steps__cards-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .destination__title {
+    padding-bottom: 30px;
+  }
+
+  .destination__find-button {
+    padding: 0 15px;
+    width: 132px;
+    height: 30px;
+    font-size: 14px;
+
+  }
+
+  .destination__find-button-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .destination__find-button-arrow {
+    width: 21px;
+  }
+
+  .stories__title {
+    padding-bottom: 60px;
+  }
+  .stories__see-button {
+    padding: 0 15px;
+    width: 132px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .stories__see-button-wrapper {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .stories__see-button-arrow {
+    width: 21px;
+  }
+
+  .footer__copyright {
+    display: none;
   }
 }
+
+/*@media screen and (max-width: 569px) {
+
+  .header__wrapper {
+    padding: 0 15px;
+  }
+
+  .preview__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .steps__cards-wrapper {
+    margin: 0 15px;
+  }
+
+  .stories__cards {
+    margin: 0 15px;
+  }
+
+  .stories__cards p {
+    margin: 0 0 0 15px;
+  }
+
+  .header__logo-name {
+    display: none;
+  }
+
+  .header__link {
+    font-size: 13px;
+  }
+
+  .preview__title {
+    font-size: 40px;
+  }
+
+  .preview__subtitle {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .preview-form__info {
+    margin: 0;
+  }
+  .preview-form__field {
+    margin-left: 16.55px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  
+  .preview-form__field::placeholder {
+    font-size: 18px;
+  }
+  
+  .preview-form__button {
+    width: 92px;
+    height: 30px;
+    font-size: 11px;
+    margin: 9px 9px 9px 0;
+  }
+
+  .destination__slider {
+    gap: 30px;
+  }
+}*/
 
 @media screen and (max-width: 391px) {
   .header__burger {
