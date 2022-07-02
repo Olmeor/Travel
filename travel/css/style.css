@@ -876,7 +876,6 @@ footer {
   }
 
   .header__login-form_button {
-    /* рамка */
     width: 70px;
     height: 30px;
     font-size: 14px;
@@ -966,10 +965,19 @@ footer {
   }
 }
 
-/*@media screen and (max-width: 569px) {
+@media screen and (max-width: 569px) {
 
   .header__wrapper {
     padding: 0 15px;
+  }
+
+  .header__nav {
+    max-width: 60%;
+  }
+
+  .header__list {
+    justify-content: space-around;
+    margin: 0;
   }
 
   .preview__wrapper {
@@ -1011,12 +1019,13 @@ footer {
   }
   .preview-form__field {
     margin-left: 16.55px;
+    width: 240px;
     max-width: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .preview-form__field::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .preview-form__button {
@@ -1026,10 +1035,39 @@ footer {
     margin: 9px 9px 9px 0;
   }
 
+  .steps__title {
+    font-size: 24px;
+  }
+
+  .steps__card-thumb {
+    width: 70px;
+  }
+
+  .steps__card-desc {
+    font-size: 14px;
+  }
+
+  .destination__title {
+    font-size: 24px;
+  }
+  
   .destination__slider {
     gap: 30px;
   }
-}*/
+
+  .stories__title {
+    font-size: 24px;
+  }
+
+  .stories__card-title {
+    font-size: 20px;
+  }
+
+  .stories__card-text {
+    font-size: 16px;
+    -webkit-line-clamp: 9;
+  }
+}
 
 @media screen and (max-width: 391px) {
   .header__burger {
