@@ -237,9 +237,6 @@ footer {
 }
 
 .burger__line {
-  display: block;
-  /*width: 26.25px;
-  height: 2.67px;*/
   background-color: #ffffff;
   position: absolute;
   left: 12.5%;
@@ -817,7 +814,6 @@ footer {
 
   .stories__card-more {
     font-size: 18px;
-    margin: 0 0 0 20px;
   }
 
   .footer__wrapper {
@@ -853,7 +849,7 @@ footer {
 
   .stories__card-title {
     font-size: 24px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
   }
 
   .stories__card-text {
@@ -863,6 +859,10 @@ footer {
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
+  }
+
+  .stories__card-more {
+    font-size: 18px;
   }
 }
 
@@ -882,7 +882,7 @@ footer {
   }
 
   .preview__wrapper{
-    padding-bottom: 61px;
+    padding-bottom: 57px;
   }
 
   .preview__title {
@@ -1018,9 +1018,8 @@ footer {
     margin: 0;
   }
   .preview-form__field {
-    margin-left: 16.55px;
+    margin-left: 16px;
     width: 240px;
-    max-width: 100%;
     font-size: 16px;
   }
   
@@ -1067,9 +1066,21 @@ footer {
     font-size: 16px;
     -webkit-line-clamp: 9;
   }
+
+  .stories__card-more {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 391px) {
+
+  .header__wrapper {
+    height: 85px;
+    align-items: flex-end;
+    background: none;
+    box-shadow: none;
+  }
+
   .header__burger {
     display: block;
   }
@@ -1081,6 +1092,7 @@ footer {
     background: #f2785c;
     box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
     border-radius: 10px;
+    display: none;
   }
 
   .header__list {
@@ -1104,8 +1116,6 @@ footer {
     width: 30px;
     height: 30px;
     position: relative;
-    /*top: 20px;
-    left: 20px;*/
     z-index: 111;
   }
 
@@ -1116,6 +1126,149 @@ footer {
     margin-right: -50%;
     transform: translate(-50%, -50%);
   }
+
+  .header__login-form {
+    display: none;
+  }
+
+  .preview {
+    height: 100%;
+    background: url(../img/first_background-m.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: -85px;
+    padding-top: 85px;
+  }
+
+  .preview__gradient-mobile {
+    height: 100%;
+    background-size: cover;
+    margin-top: -85px;
+    padding-top: 85px;
+    background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+  }
+  
+  .preview__title {
+    display: none;
+  }
+
+  .preview__subtitle {
+    display: none;
+  }
+
+  .preview-form__field {
+    margin-left: 16px;
+    max-width: 100%;
+    font-size: 14px;
+  }
+  
+  .preview-form__field::placeholder {
+    font-size: 14px;
+  }
+  
+  .preview-form__button {
+    width: 92px;
+    height: 30px;
+    font-size: 11px;
+    margin: 9px 9px 9px 0;
+  }
+
+  .steps__cards-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .steps__title {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  .steps__card-desc {
+    font-size: 10px;
+  }
+
+  .steps__card-desc-bike-mobile{
+    width: 94px;
+  }
+
+  .steps__card-bike-mobile {
+    text-align: start;
+  }
+
+  .steps__card-plane-mobile {
+    text-align: end;
+  }
+
+  .destination__title {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .destination__find-button {
+    padding: 0;
+    width: 92px;
+    height: 30px;
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .destination__find-button-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .destination__find-button-arrow {
+    width: 10px;
+  }
+
+  .stories__title {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .stories__wrapper {
+    height: 100%;
+    background: url(../img/second_background.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+  .stories__wrapper-bg {
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+
+  .stories__card-title {
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .stories__card-text {
+    font-size: 9px;
+    -webkit-line-clamp: none;
+  }
+
+  .stories__card-more {
+    font-size: 9px;
+  }
+
+  .stories__see-button {
+    padding: 0;
+    width: 92px;
+    height: 30px;
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .stories__see-button-wrapper {
+    padding-bottom: 13px;
+  }
+
+  .stories__see-button-arrow {
+    width: 10px;
+  }
+
 }
+
 
 /* Media end */
