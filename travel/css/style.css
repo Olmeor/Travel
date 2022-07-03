@@ -1088,13 +1088,20 @@ footer {
 
   .header__wrapper {
     height: 85px;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
     background: none;
     box-shadow: none;
   }
 
+  .header__logo {
+    margin-top: 13px;
+  }
+
   .header__burger {
     display: block;
+    position: relative;
+    margin-top: 6px;
+    margin-right: 5px;
   }
   
   .header__nav {
@@ -1147,8 +1154,8 @@ footer {
     height: 100%;
     background: url(../img/first_background-m.jpg) no-repeat center;
     background-size: cover;
-    margin-top: -85px;
-    padding-top: 85px;
+    margin-top: -97px;
+    padding-top: 90px;
   }
 
   .preview__gradient-mobile {
@@ -1167,6 +1174,12 @@ footer {
     display: none;
   }
 
+  .preview-form {
+    display: block;
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 5px;
+  }
   .preview-form__field {
     margin-left: 16px;
     max-width: 100%;
@@ -1190,9 +1203,13 @@ footer {
 
   .steps__title {
     font-size: 14px;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 17px;
   }
 
+  .steps__card-thumb {
+    padding-bottom: 14px;
+  }
   .steps__card-desc {
     font-size: 10px;
   }
@@ -1203,6 +1220,7 @@ footer {
 
   .steps__card-bike-mobile {
     text-align: start;
+    
   }
 
   .steps__card-plane-mobile {
@@ -1211,7 +1229,7 @@ footer {
 
   .destination__title {
     font-size: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
   }
 
   .destination__slider {
@@ -1231,7 +1249,7 @@ footer {
     font-size: 20px;
     color: #ffffff;
     margin: 0;
-    top: -200px;
+    top: -207px;
     left: 15px;
   }
 
@@ -1247,7 +1265,7 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin: -120px 30px 100px 30px;
+    margin: -131px 21px 100px 21px;
     z-index: 20;
   }
 
@@ -1270,7 +1288,7 @@ footer {
 
   .stories__title {
     font-size: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 
   .stories__wrapper {
@@ -1294,22 +1312,22 @@ footer {
     padding-top: 5px;
   }
 
+  .stories__cards {
+    margin-bottom: -5px;
+  }
+
   .stories__card {
     padding-bottom: 15px;
   }
 
-  .stories__card-desc {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .stories__cards p {
     margin: 0 0 0 10px;
+    
   }
 
   .stories__card-pic {
     max-width: 155px;
-    height: auto;
+    height: 130px;
   }
 
   .stories__card-text {
@@ -1319,6 +1337,7 @@ footer {
   }
 
   .stories__card-more {
+    display: block;
     font-size: 9px;
     line-height: 11px;
     margin: 0 0 0 10px;
