@@ -165,7 +165,7 @@ footer {
 }
 
 .header__nav {
-  margin-left: -27px;
+  margin-left: 8px;
 }
 
 .header__list {
@@ -185,9 +185,9 @@ footer {
   display: none;
 }
 
-.header__item:last-child {
+/*.header__item:last-child {
   margin-right: 0;
-}
+}*/
 
 .header__link {
   font-family: "Red Hat Text";
@@ -1302,7 +1302,7 @@ footer {
     background-size: cover;
     margin-top: -10px;
     padding-top: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 
   .stories__wrapper-bg {
@@ -1362,6 +1362,10 @@ footer {
 
   .stories__see-button-arrow {
     width: 10px;
+  }
+
+  .footer {
+    margin-top: -50px;
   }
 
   .footer__school {
