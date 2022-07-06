@@ -234,6 +234,7 @@ footer {
   width: 35px;
   height: 32px;
   position: relative;
+  background-color: #f2785c00;
 }
 
 .burger__line {
@@ -1102,6 +1103,8 @@ footer {
   .header__burger {
     display: block;
     position: relative;
+    width: 35px;
+    height: 32px;
     margin-top: 33px;
     margin-right: 5px;
   }
@@ -1117,7 +1120,12 @@ footer {
     border-radius: 10px;
     z-index: 10;
     transform: translate(100%);
+    transition: 0.2s all linear;
     /*display: none;*/
+  }
+
+  .header__nav-active {
+    transform: translate(0);
   }
 
   .header__list {
@@ -1407,6 +1415,5 @@ footer {
   }
 
 }
-
 
 /* Media end */
