@@ -1,22 +1,41 @@
 // Burger menu
 
-/* const navBurger = document.querySelector('.header__nav-close-button');
-const headerNav = document.querySelector('.header__nav');
+const burger = document.querySelector('.header__burger');
+const bodyShadow = document.querySelector('.body__shadow');
+const nav = document.querySelector('.header__nav');
+const navItems = document.querySelectorAll('.header__item');
+const closeButton = document.querySelector('.header__nav-close');
 
-function active() {
-  navBurger.classList.toggle('header__nav-active');
-  headerNav.classList.toggle('header__nav-active');
+
+burger.onclick = function() {
+  nav.classList.toggle('header__nav-active');
+  bodyShadow.classList.toggle('body__shadow-active');
+  document.body.style.overflow = 'hidden';
 }
 
-document.addEventListener('click', (event => {
-  if (event.target.classList.contains('header__nav-close-button')) {
-    active();
+for (let item in navItems) {
+  navItems[item].onclick = function() {
+    nav.classList.toggle('header__nav-active');
+    bodyShadow.classList.toggle('body__shadow-active');
+    document.body.style.overflow = '';
   }
-  else if (!event.target.classList.contains('header__nav') &&
-    headerNav.classList.contains('header__nav-active')) {
-    active();
-  }
-}))*/
+}
+
+closeButton.onclick = function() {
+  nav.classList.toggle('header__nav-active');
+  bodyShadow.classList.toggle('body__shadow-active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener( 'click', (element) => {
+  let target = element.target;
+ 
+	if ( !target.closest('.header__wrapper') && !target.closest('.header__burger') ) {
+		nav.classList.remove('header__nav-active'); 
+    bodyShadow.classList.remove('body__shadow-active');
+    document.body.style.overflow = '';
+	}
+})
 
 // Pop up
 
@@ -55,6 +74,7 @@ function makePopUpVisible(element){
   element.stopPropagation();
   popup.classList.toggle('login__pop-up-visible');
   shadow.classList.add('body__shadow-active');
+  document.body.style.overflow = 'hidden';
 }
 
 function makePopUpInvisible(event) {
