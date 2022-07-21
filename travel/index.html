@@ -185,14 +185,60 @@
       <!-- Steps end -->
 
       <!-- Destination start -->
-      <section class="destination" id="destination">
+      <section class="destinations">
+				<div class="destinations__container">
+					<h2 id="destinations" class="destinations__title">POPULAR DESTINATIONS</h2>
+					<div class="destinations__wrapper">
+						<img class="slider__arrow arrow-left" src="./img/svg/arr.svg" alt="Arrow icon: left">
+						<img class="slider__arrow arrow-right" src="./img/svg/arr.svg" alt="Arrow icon: right">
+						<div class="slider">
+							<div id="card-0" class="destinations__card">
+								<img src="./img/japan.jpg" alt="Picture: Japan" class="destinations__item destinations__item-center">
+								<span class="destinations__country">JAPAN</span>
+							</div>
+							<div id="card-1" class="destinations__card">
+								<img src="./img/USA.jpg" alt="Picture: USA" class="destinations__item destinations__item-last">
+								<span class="destinations__country">USA</span>
+							</div>
+							<div id="card-2" class="destinations__card">
+								<img src="./img/spain.jpg" alt="Picture: Spain" class="destinations__item destinations__item-last">
+								<span class="destinations__country">SPAIN</span>
+							</div>
+							<div id="card-3" class="destinations__card">
+								<img src="./img/japan.jpg" alt="Picture: Japan" class="destinations__item destinations__item-center">
+								<span class="destinations__country">JAPAN</span>
+							</div>
+							<div id="card-4" class="destinations__card">
+								<img src="./img/USA.jpg" alt="Picture: USA" class="destinations__item destinations__item-last">
+								<span class="destinations__country">USA</span>
+							</div>
+						</div>
+					</div>
+					<ul class="destinations__slider">
+						<li class="slider__item slider__item_active"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+					</ul>
+					<!-- <button class="button button-arrow destinations__button">
+						<img class="button__icon" src="./img/svg/arrow.svg" alt="Icon: Arrow">
+						<span class="button__text">Find More</span>
+					</button> -->
+          <div class="destination__find-button-wrapper">
+            <button class="destination__find-button">
+              <img src="./img/svg/bi_arrow-right.svg" alt="right-arrow-ico" class="destination__find-button-arrow">Find More
+            </button>
+          </div>
+				</div>
+			</section>
+
+
+      <!-- <section class="destination" id="destination">
         <div class="destination__wrapper">
           <h2 class="destination__title">POPULAR DESTINATIONS</h2>
-          <div class="destination__slider">
-            <div class="destination__slider-item">
-              <div class="destination__slider-pic destination__slider-pic-spain">
+          <div class="destination__slider-wrapper">
+            <div class="destination__slider-item destination__slider-pic-spain">
                 <picture>
-                  <source media="(min-width:391px)" srcset="./img/slider_spain.jpg">
+                  <source media="(min-width:390px)" srcset="./img/slider_spain.jpg">
                   <img
                     src="./img/slider_spain-m.jpg"
                     alt="Spain"
@@ -200,12 +246,10 @@
                   />
                 </picture>
                 <p class="destination__slider-desc">SPAIN</p>
-              </div>
             </div>
-            <div class="destination__slider-item">
-              <div class="destination__slider-pic destination__slider-pic-japan">
+            <div class="destination__slider-item destination__slider-pic-japan">
                 <picture>
-                  <source media="(min-width:391px)" srcset="./img/slider-japan.jpg">
+                  <source media="(min-width:390px)" srcset="./img/slider-japan.jpg">
                   <img
                     src="./img/slider-japan-m.jpg"
                     alt="Japan"
@@ -213,12 +257,10 @@
                   />
                 </picture>
                 <p class="destination__slider-desc">JAPAN</p>
-              </div>
             </div>
-            <div class="destination__slider-item">
-              <div class="destination__slider-pic destination__slider-pic-usa">
+            <div class="destination__slider-item destination__slider-pic-usa">
                 <picture>
-                  <source media="(min-width:391px)" srcset="./img/slider_usa.jpg">
+                  <source media="(min-width:390px)" srcset="./img/slider_usa.jpg">
                   <img
                     src="./img/slider_usa-m.jpg"
                     alt="USA"
@@ -226,11 +268,10 @@
                   />
                 </picture>
                 <p class="destination__slider-desc">USA</p>
-              </div>
             </div>
           </div>
           <picture>
-            <source media="(min-width:391px)" srcset="./img/svg/slider-plug.svg">
+            <source media="(min-width:390px)" srcset="./img/svg/slider-plug.svg">
             <img
               src="./img/svg/slider-plug-m.svg"
               alt="balls"
@@ -247,7 +288,7 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Destination end -->
 
       <!-- Stories start -->
@@ -259,7 +300,7 @@
               <div class="stories__card">
                 <div class="stories__card-pic">
                   <picture>
-                    <source media="(min-width:391px)" srcset="./img/stories-thailand.jpg">
+                    <source media="(min-width:390px)" srcset="./img/stories-thailand.jpg">
                     <img
                       src="./img/stories-thailand-m.jpg"
                       alt="Thailand"
@@ -283,7 +324,7 @@
               <div class="stories__card">
                 <div class="stories__card-pic">
                   <picture>
-                    <source media="(min-width:391px)" srcset="./img/stories-utah.jpg">
+                    <source media="(min-width:390px)" srcset="./img/stories-utah.jpg">
                     <img
                       src="./img/stories-utah-m.jpg"
                       alt="Utah"
@@ -307,7 +348,7 @@
               <div class="stories__card">
                 <div class="stories__card-pic">
                   <picture>
-                    <source media="(min-width:391px)" srcset="./img/stories-mountains.jpg">
+                    <source media="(min-width:390px)" srcset="./img/stories-mountains.jpg">
                     <img
                       src="./img/stories-mountains-m.jpg"
                       alt="Mountains"
@@ -331,7 +372,7 @@
               <div class="stories__card">
                 <div class="stories__card-pic">
                   <picture>
-                    <source media="(min-width:391px)" srcset="./img/stories-journey.jpg">
+                    <source media="(min-width:390px)" srcset="./img/stories-journey.jpg">
                     <img
                       src="./img/stories-journey-m.jpg"
                       alt="Longest journey"
