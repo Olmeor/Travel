@@ -39,7 +39,7 @@
               <a href="#steps" class="header__link">Plan Your Trip</a>
             </li>
             <li class="header__item">
-              <a href="#destination" class="header__link">Destinations</a>
+              <a href="#destination" class="header__link">destination</a>
             </li>
             <li class="header__item">
               <a href="#stories" class="header__link">Travel Stories</a>
@@ -185,44 +185,40 @@
       <!-- Steps end -->
 
       <!-- Destination start -->
-      <section class="destinations">
-				<div class="destinations__container">
-					<h2 id="destinations" class="destinations__title">POPULAR DESTINATIONS</h2>
-					<div class="destinations__wrapper">
-						<img class="slider__arrow arrow-left" src="./img/svg/arr.svg" alt="Arrow icon: left">
-						<img class="slider__arrow arrow-right" src="./img/svg/arr.svg" alt="Arrow icon: right">
+      <section class="destination">
+				<div class="destination__wrapper">
+					<h2 id="destination" class="destination__title">POPULAR DESTINATIONS</h2>
+					<div class="destination__slider">
+						<img class="slider__arrow arrow-left" src="./img/svg/slider-arrow.svg" alt="Arrow left">
+						<img class="slider__arrow arrow-right" src="./img/svg/slider-arrow.svg" alt="Arrow right">
 						<div class="slider">
-							<div id="card-0" class="destinations__card">
-								<img src="./img/japan.jpg" alt="Picture: Japan" class="destinations__item destinations__item-center">
-								<span class="destinations__country">JAPAN</span>
+							<div id="card-0" class="destination__slider-pic">
+								<img src="./img/slider-japan.jpg" alt="Japan" class="destination__slider-img">
+								<span class="destination__country">JAPAN</span>
 							</div>
-							<div id="card-1" class="destinations__card">
-								<img src="./img/USA.jpg" alt="Picture: USA" class="destinations__item destinations__item-last">
-								<span class="destinations__country">USA</span>
+							<div id="card-1" class="destination__slider-pic">
+								<img src="./img/slider_usa.jpg" alt="USA" class="destination__slider-img">
+								<span class="destination__country">USA</span>
 							</div>
-							<div id="card-2" class="destinations__card">
-								<img src="./img/spain.jpg" alt="Picture: Spain" class="destinations__item destinations__item-last">
-								<span class="destinations__country">SPAIN</span>
+							<div id="card-2" class="destination__slider-pic">
+								<img src="./img/slider_spain.jpg" alt="Spain" class="destination__slider-img">
+								<span class="destination__country">SPAIN</span>
 							</div>
-							<div id="card-3" class="destinations__card">
-								<img src="./img/japan.jpg" alt="Picture: Japan" class="destinations__item destinations__item-center">
-								<span class="destinations__country">JAPAN</span>
+							<div id="card-3" class="destination__slider-pic">
+								<img src="./img/slider-japan.jpg" alt="Japan" class="destination__slider-img">
+								<span class="destination__country">JAPAN</span>
 							</div>
-							<div id="card-4" class="destinations__card">
-								<img src="./img/USA.jpg" alt="Picture: USA" class="destinations__item destinations__item-last">
-								<span class="destinations__country">USA</span>
+							<div id="card-4" class="destination__slider-pic">
+								<img src="./img/slider_usa.jpg" alt="USA" class="destination__slider-img">
+								<span class="destination__country">USA</span>
 							</div>
 						</div>
 					</div>
-					<ul class="destinations__slider">
+					<ul class="destination__slider-items">
 						<li class="slider__item slider__item_active"></li>
 						<li class="slider__item"></li>
 						<li class="slider__item"></li>
 					</ul>
-					<!-- <button class="button button-arrow destinations__button">
-						<img class="button__icon" src="./img/svg/arrow.svg" alt="Icon: Arrow">
-						<span class="button__text">Find More</span>
-					</button> -->
           <div class="destination__find-button-wrapper">
             <button class="destination__find-button">
               <img src="./img/svg/bi_arrow-right.svg" alt="right-arrow-ico" class="destination__find-button-arrow">Find More
@@ -231,64 +227,6 @@
 				</div>
 			</section>
 
-
-      <!-- <section class="destination" id="destination">
-        <div class="destination__wrapper">
-          <h2 class="destination__title">POPULAR DESTINATIONS</h2>
-          <div class="destination__slider-wrapper">
-            <div class="destination__slider-item destination__slider-pic-spain">
-                <picture>
-                  <source media="(min-width:390px)" srcset="./img/slider_spain.jpg">
-                  <img
-                    src="./img/slider_spain-m.jpg"
-                    alt="Spain"
-                    class="destination__slider-img"
-                  />
-                </picture>
-                <p class="destination__slider-desc">SPAIN</p>
-            </div>
-            <div class="destination__slider-item destination__slider-pic-japan">
-                <picture>
-                  <source media="(min-width:390px)" srcset="./img/slider-japan.jpg">
-                  <img
-                    src="./img/slider-japan-m.jpg"
-                    alt="Japan"
-                    class="destination__slider-img"
-                  />
-                </picture>
-                <p class="destination__slider-desc">JAPAN</p>
-            </div>
-            <div class="destination__slider-item destination__slider-pic-usa">
-                <picture>
-                  <source media="(min-width:390px)" srcset="./img/slider_usa.jpg">
-                  <img
-                    src="./img/slider_usa-m.jpg"
-                    alt="USA"
-                    class="destination__slider-img"
-                  />
-                </picture>
-                <p class="destination__slider-desc">USA</p>
-            </div>
-          </div>
-          <picture>
-            <source media="(min-width:390px)" srcset="./img/svg/slider-plug.svg">
-            <img
-              src="./img/svg/slider-plug-m.svg"
-              alt="balls"
-              class="destination__plug"
-            />
-          </picture>
-          <div class="destination_slider-arrows">
-            <img src="./img/svg/slider-arrow-l.svg" alt="arrow-left" class="destination_slider-arrows-left">
-            <img src="./img/svg/slider-arrow-r.svg" alt="arrow-right" class="destination_slider-arrows-right">
-          </div>
-          <div class="destination__find-button-wrapper">
-            <button class="destination__find-button">
-              <img src="./img/svg/bi_arrow-right.svg" alt="right-arrow-ico" class="destination__find-button-arrow">Find More
-            </button>
-          </div>
-        </div>
-      </section> -->
       <!-- Destination end -->
 
       <!-- Stories start -->

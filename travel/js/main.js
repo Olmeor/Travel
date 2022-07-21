@@ -54,6 +54,7 @@ const loginWindow = {
   account: "Don't have an account?",
   link: "Register"
 }
+
 const createWindow = {
   title: "Create account",
   button: "Sign Up",
@@ -100,28 +101,28 @@ document.addEventListener('click', makePopUpInvisible);
 
 // Slider
 
-const arrowLeft = document.querySelector('.arrow-left')
-const arrowRight = document.querySelector('.arrow-right')
-const slider = document.querySelector('.slider')
-const card0 = document.querySelector('#card-0')
-const card1 = document.querySelector('#card-1')
-const card2 = document.querySelector('#card-2')
-const card3 = document.querySelector('#card-3')
-const card4 = document.querySelector('#card-4')
-
-const sliderItem = document.querySelectorAll('.slider__item')
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+const slider = document.querySelector('.slider');
+const item0 = document.querySelector('#item-0');
+const item1 = document.querySelector('#item-1');
+const item2 = document.querySelector('#item-2');
+const item3 = document.querySelector('#item-3');
+const item4 = document.querySelector('#item-4');
+const sliderItem = document.querySelectorAll('.slider__item');
 
 const moveLeft = () => {
-	slider.classList.add('transition-left')
-	arrowLeft.removeEventListener('click', moveLeft)
-	arrowRight.removeEventListener('click', moveRight)
-	itemLeft()
+	slider.classList.add('transition-left');
+	arrowLeft.removeEventListener('click', moveLeft);
+	arrowRight.removeEventListener('click', moveRight);
+	itemLeft();
 }
+
 const moveRight = () => {
-	slider.classList.add('transition-right')
-	arrowRight.removeEventListener('click', moveRight)
-	arrowLeft.removeEventListener('click', moveLeft)
-	itemRight()
+	slider.classList.add('transition-right');
+	arrowRight.removeEventListener('click', moveRight);
+	arrowLeft.removeEventListener('click', moveLeft);
+	itemRight();
 }
 
 function itemLeft() {
@@ -164,27 +165,27 @@ function itemRight() {
 	}
 }
 
-arrowLeft.addEventListener('click', moveLeft)
-arrowRight.addEventListener('click', moveRight)
-card1.addEventListener('click', moveLeft)
-card3.addEventListener('click', moveRight)
+arrowLeft.addEventListener('click', moveLeft);
+arrowRight.addEventListener('click', moveRight);
+item1.addEventListener('click', moveLeft);
+item3.addEventListener('click', moveRight);
 
 slider.addEventListener('animationend', (animation) => {
-	let cardBox = card2.innerHTML
+	let itemBox = item2.innerHTML
 	if (animation.animationName === 'move-left') {
 		slider.classList.remove('transition-left')
-		card2.innerHTML = card1.innerHTML
-		card1.innerHTML = card0.innerHTML
-		card3.innerHTML = cardBox
-		card0.innerHTML = cardBox
-		card4.innerHTML = card1.innerHTML
+		item2.innerHTML = item1.innerHTML
+		item1.innerHTML = item0.innerHTML
+		item3.innerHTML = itemBox
+		item0.innerHTML = itemBox
+		item4.innerHTML = item1.innerHTML
 	} else {
 		slider.classList.remove('transition-right')
-		card2.innerHTML = card3.innerHTML
-		card3.innerHTML = card4.innerHTML
-		card1.innerHTML = cardBox
-		card4.innerHTML = cardBox
-		card0.innerHTML = card3.innerHTML
+		item2.innerHTML = item3.innerHTML
+		item3.innerHTML = item4.innerHTML
+		item1.innerHTML = itemBox
+		item4.innerHTML = itemBox
+		item0.innerHTML = item3.innerHTML
 	}
 	arrowLeft.addEventListener('click', moveLeft)
 	arrowRight.addEventListener('click', moveRight)
