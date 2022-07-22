@@ -96,10 +96,7 @@ html {
 *,
 *::before,
 *::after {
-	/* padding: 0;
-	margin: 0;
-	border: 0;
-	scroll-behavior: smooth; */
+
 	box-sizing: border-box;
 }
 
@@ -265,10 +262,8 @@ footer {
   position: absolute;
   max-width: 650px;
   width: 100%;
-  /*height: 660px;*/
   top: 52%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
   transform: translate(-50%, -300%);
   background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -277,7 +272,6 @@ footer {
   display: flex;
   flex-direction: column;
   transition: 0.3s linear;
-  /* display: none; */
 }
 
 .login__pop-up-visible {
@@ -285,7 +279,6 @@ footer {
 }
 
 .login__wrapper {
-  /* padding: 0 45px; */
   width: 86%;
   margin: 0 auto;
 }
@@ -718,12 +711,12 @@ footer {
 
 .transition-right {
 	animation-name: move-right;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 }
 
 .transition-left {
 	animation-name: move-left;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 }
 
 .destination__slider-pic {
@@ -762,13 +755,13 @@ footer {
 .slider__item {
 	width: 100%;
 	height: 100%;
-	transition: 2s;
+	transition: 1.5s;
 	background: rgba(242, 120, 92, 0.5);
 	border-radius: 50%;
 }
 
 .slider__item_active {
-	transition: 2s;
+	transition: 1.5s;
 	background: #f2785c;
 }
 

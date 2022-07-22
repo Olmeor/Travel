@@ -48,6 +48,7 @@ const popupTitle = document.querySelector('.login__caption');
 const popupButton = document.querySelector('.login__sign-button-text');
 const popupText = document.querySelector('.login__register-question');
 const loginButton = document.querySelector('.login__sign-button');
+
 const loginWindow = {
   title: "Login to your account",
   button: "Sign In",
@@ -62,17 +63,14 @@ const createWindow = {
   link: "Log in"
 }
 
-function ChangePopUpWindow(event) {
-  let setOfWords = (event.target.innerHTML != "Register")?loginWindow:createWindow;
-  popup.classList.toggle(popupActive);
-  popupTitle.innerHTML = setOfWords.title;
-  popupButton.innerHTML = setOfWords.button;
-  popupText.innerHTML = setOfWords.account;
-  popupClick.innerHTML = setOfWords.link;
-}
-
 function makePopUpVisible(element){
-  element.stopPropagation();
+	document.querySelector(".header__nav").classList.remove('header__nav-active');
+  popup.classList.remove(popupActive);
+  popupTitle.innerHTML = loginWindow.title;
+  popupButton.innerHTML = loginWindow.button;
+  popupText.innerHTML = loginWindow.account;
+  popupClick.innerHTML = loginWindow.link;
+	element.stopPropagation();
   popup.classList.toggle('login__pop-up-visible');
   shadow.classList.add('body__shadow-active');
   document.body.style.overflow = 'hidden';
@@ -80,11 +78,22 @@ function makePopUpVisible(element){
 
 function makePopUpInvisible(event) {
   let target = event.target;
-  let popupIsUp = popup == target || popup.contains(target);
-  if (popup.classList.contains('login__pop-up-visible') && !popupIsUp) {
+  let popupActive = popup == target || popup.contains(target);
+  if (popup.classList.contains('login__pop-up-visible') && !popupActive) {
       popup.classList.remove('login__pop-up-visible');
       shadow.classList.remove('body__shadow-active');
     }
+}
+
+function changePopUpWindow(event) {
+  let changeWords = (event.target.innerHTML != "Register")?loginWindow:createWindow;
+  popup.classList.toggle(popupActive);
+  popupTitle.innerHTML = changeWords.title;
+  popupButton.innerHTML = changeWords.button;
+  popupText.innerHTML = changeWords.account;
+  popupClick.innerHTML = changeWords.link;
+  shadow.classList.add('body__shadow-active');
+	document.body.style.overflow = 'hidden';
 }
 
 function alertLoginPassword() {
@@ -93,9 +102,9 @@ function alertLoginPassword() {
   alert(`Login: ${loginValue}\nPassword: ${passwordValue}`);
 }
 
-popupClick.addEventListener('click', ChangePopUpWindow);
 headerButton.addEventListener('click', makePopUpVisible);
 accountButton.addEventListener('click', makePopUpVisible);
+popupClick.addEventListener('click', changePopUpWindow);
 loginButton.addEventListener('click', alertLoginPassword);
 document.addEventListener('click', makePopUpInvisible);
 
